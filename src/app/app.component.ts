@@ -6,12 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  showSecret = false;
-  log = [];
-
-
-  onToggleDetails() {
-    this.showSecret = !this.showSecret;
-    this.log.push(new Date());
-  }
 }
