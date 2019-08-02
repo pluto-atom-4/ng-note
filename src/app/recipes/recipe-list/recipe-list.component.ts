@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
     './recipe-list.component.scss'
   ]
 })
-export class RecipeListComponent {
+export class RecipeListComponent implements OnInit {
+
+  recipes = [];
+
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+
 }
